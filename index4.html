@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Улыбка</title>
+    <style>
+        html, body {
+            height: 100%;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .smiley {
+            width: 200px;
+            height: 200px;
+            background-color: yellow;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+        }
+        .eyes {
+            width: 30px;
+            height: 60px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 30%;
+        }
+        .left-eye {
+            left: 30%;
+        }
+        .right-eye {
+            right: 30%;
+        }
+        .mouth {
+            width: 100px;
+            height: 40px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 75%; /* Изменяем значение на 75% */
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="smiley">
+        <div class="eyes left-eye"></div>
+        <div class="eyes right-eye"></div>
+        <div class="mouth"></div>
+    </div>
+</body>
+</html>
